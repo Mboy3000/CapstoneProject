@@ -1,7 +1,36 @@
 body{
-background: linear-gradient(
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    background: linear-gradient(
     90deg,
     aqua,
     aquamarine
+    
 );
+
+
+}
+.NavigationMenu{
+  display:flex;
+  justify-content: center;
+}
+
+
+
+.NavigationMenu a{
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.Health-Form{
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 10px 5px 5px black ;
+
 }

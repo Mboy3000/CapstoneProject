@@ -6,30 +6,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <div class="NavigationMenu">
             <nav class="navbar">
                 <ul>
-                    <li><a href="Homepage.html">Home</a></li>
-                    <li><a href="AboutPage.html">About</a></li>
-                    <li><a href="ControlSimulationpage.html">ControlSimulation</a></li>
-                    <li><a href="ContactPage.html">Contact</a></li>
-                    <li><a href="StatsPage.html">Stats</a></li>
+                    <li><a  class="active" href="Homepage.html" role="menuitem">Home</a></li>
+                    <li><a href="AboutPage.html" role="menuitem">About</a></li>
+                    <li><a href="ControlSimulationpage.html" role="menuitem">ControlSimulation</a></li>
+                    <li><a href="ContactPage.html" role="menuitem">Contact</a></li>
+                    <li><a href="StatsPage.html" role="menuitem">Stats</a></li>
+                    <li><a href="FAQ.html" role="menuitem">FAQ</a></li>
+                    <li><a href="AdditionalResources.html" role="menuitem">Additional Resources</a></li>
                 </ul>
-
-
             </nav>
+
+
         </div>
     </header>
+    <!--place holder-->
+    <h1> Welcome</h1>
+    <section aria-label="Photos in a media carousel, of items, and children in car-seats" class="Media-Carasole">
+        <div class="carousel">
+            <button class="CarouselButton Prev"></button>
+            <button claass="CarouselButton Next"></button>
+<ul>
+   <li class="slide">
+    <img src="car seat infinte CAD.png" alt="A image of the Intelli-Seat prototype, it is grey with a sleek design,">
+   </li> 
+   <img src="car seat infinte CAD.png" alt="A image of the Intelli-Seat prototype, it is grey with a sleek design,">
+</li> 
+<img src="car seat infinte CAD.png" alt="A image of the Intelli-Seat prototype, it is grey with a sleek design,">
+</li> 
+<img src="car seat infinte CAD.png" alt="A image of the Intelli-Seat prototype, it is grey with a sleek design,">
+</li> 
+<img src="car seat infinte CAD.png" alt="A image of the Intelli-Seat prototype, it is grey with a sleek design,">
+</li> 
+</ul>
+</div>
+</section>
 
-    <section>
-        <h1> Welcome</h1>
 
-    </section>
+<section class="Disclaimer" aria-label=" A Disclaimer, Telling the user to NOT input the information in the ">
+    <h1 class="Disclaimer">**DISCLAIMER**</h1>
+    <h1 class="Disclaimer">**DO NOT ACTUALLY PUT IN INFORMATION THE FORM IS JUST TO SHOW A PROF OF CONCEPT**</h1>
 
-    <section>
+</section>
+<Fieldset class="Health-Form">
+<section>
+    <!--Parents section of the form-->
+    <label for="First-Name">Please Enter Your first Name:<input id="First-Name" name="First-Name" type="text" required/></label>
+    <br><br>
+<label for="Last-Name">Please Enter Your Last Name:<input id="Last-Name" type="text" required/></label><br><br>
+<label for="Social-Security Number">Please Enter Your Social Social-Security Number<input id="Social-Security" type="text" required/></label>
+<br><br>
+<label for="Relationship-To-Child">Please select your Relationship to child:<br><!--need to remove later with CSS --><input id="Relationship-To-Child" type="radio" name="Relationship-To-Child" class="inline"/>Mother</label>
+<label for="Relationship-To-Child"></label><input id="Relationship-To-Child" type="radio" name="Relationship-To-Child" class="inline"/>Father</label>
+<input id="Relationship-To-Child" type="radio" name="Relationship-To-Child" class="inline"/>Legal Guardian</label>
+</section>
+<br>
+<br>
 
+
+
+<!-- Child's Section of the form-->
+    <section class="child-form">
+
+    <label for="Child's-First-Name"> Please Enter Your Child's First Name:<input id="Child's-First-Name" name="Childs-First-Name" type="text" required/></label>
+    <label for="Child's-Last-Name">Please Enter Your Child's Last Name:<input id="Child's-Last-Name" name="Child's-Last-Name" type="text"required/></label>
+    <p> Please select your child's sex:</p>
+    <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Boy</label>
+    <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Girl</label>
+    <!--need to edit padding and remove the breaklines later-->
+    <br>
+
+    <br>
+    <!--Need to edit padding and remove break lines later above-->
+    <label for="Child's-Race"> Please Select Child's race 
+        <select id="Child's-Race">
+            
+                <option value="">Please Select Child's Race</option>
+                <option value="1">Mixed Race</option>
+                <option value="2">Arctic (Siberian, Eskimo)</option>
+                <option value="3">Caucasian (European)</option>
+                <option value="4">Caucasian (Indian)</option>
+                <option value="5">Caucasian (Middle East)</option>
+                <option value="6">Caucasian (North African, Other)</option>
+                <option value="7">Indigenous Australian</option>
+                <option value="8">Native American</option>
+                <option value="9">North East Asian (Mongol, Tibetan, Korean Japanese, etc)</option>
+                <option value="10">Pacific (Polynesian, Micronesian, etc)</option>
+                <option value="11">South East Asian (Chinese, Thai, Malay, Filipino, etc)</option>
+                <option value="12">West African, Bushmen, Ethiopian</option>
+                <option value="13">Other Race</option>
+                
+        </select>
+         
+    </label>
+    </label>
+    <br>
+    <br><!-- Need to edit later in CSS-->
+    <label for="health-information">Please Provide Additional Medical Information About your child <label>(Desieases Surgeries etc.)</label>/></label>
+    <textarea for="health-information"></textarea>
+    <label for ="terms-and-conditions">
+        <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline"/> I accept the <a href="terms-and-conditions.html">terms and conditions</a>
+</label>
+</fieldset>
     </section>
     
 </body>
